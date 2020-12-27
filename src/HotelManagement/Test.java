@@ -53,9 +53,9 @@ public class Test {
     }
 
     private static void payRoom(ArrayList<Hotel> list, String cmt) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getPerson().getCMTND().equals(cmt)) {
-                list.get(i).Payroom();
+        for (Hotel hotel : list) {
+            if (hotel.getPerson().getCMTND().equals(cmt)) {
+                hotel.Payroom();
             }
         }
     }
